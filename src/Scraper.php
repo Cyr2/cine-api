@@ -1,4 +1,4 @@
-<?php
+<?php namespace Scraper;
 class Scraper {
     private $url;
 
@@ -29,8 +29,7 @@ class Scraper {
 
             // Vérifier si la clé 'props' existe et récupérer les informations nécessaires
             if (isset($data['props']['pageProps']['prog'])) {
-                $movies = $data['props']['pageProps']['prog'];
-                return $movies;
+                return $data['props']['pageProps']['prog'];
             } else {
                 return ['Erreur : Impossible de trouver les informations de films'];
             }
@@ -39,3 +38,4 @@ class Scraper {
         }
     }
 }
+?>
