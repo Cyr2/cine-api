@@ -5,12 +5,5 @@
   "routes": [
     { "src": "/(.*)", "dest": "public/index.php" }
   ],
-  "build": {
-    "env": {
-      "COMPOSER_CACHE_DIR": "/tmp/composer-cache"
-    },
-    "commands": {
-      "prebuild": "composer install --prefer-dist --no-dev --optimize-autoloader"
-    }
-  }
+  "installCommand": "composer install --prefer-dist --no-dev --optimize-autoloader"
 }
