@@ -13,8 +13,5 @@
   "builds": [
     { "src": "public/index.php", "use": "vercel-php" }
   ],
-  "routes": [
-    { "src": "/(.*)", "dest": "public/index.php" }
-  ],
   "installCommand": "composer install --prefer-dist --no-dev --optimize-autoloader"
 }
